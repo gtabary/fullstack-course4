@@ -1,0 +1,85 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+body {
+  font: 1em Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.75em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+}
+
+.menu .section {
+  float: left;
+  position: relative;
+  padding: 10px;
+  background-image: url("../images/white1px.png");
+}
+
+.menu .section:nth-of-type(1) {
+  background-color: orange;
+}
+.menu .section:nth-of-type(2) {
+  background-color: red;
+}
+.menu .section:nth-of-type(3) {
+  background-color: maroon;
+}
+
+.menu p {
+  padding: .5em 1em .5em 1em;
+  border: 1px solid black;
+  height: 100%;
+  margin: 0;
+}
+
+.menu .title {
+  float: right;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 1.25em;
+  background-color: inherit;
+}
+
+.menu .text {
+  background-color: #dcdcdc;
+  padding-top: 3em;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .desktop-1 {
+    width: 100%;
+  }
+  .desktop-2 {
+    width: 50%;
+  }
+  .desktop-3 {
+    width: 33.33%;
+  }
+}
+
+/********** Tablet**********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet-1 {
+    width: 100%;
+  }
+  .tablet-2 {
+    width: 50%;
+  }
+}
+
+/********** Mobile **********/
+@media (max-width: 767px) {
+  .mobile-1 {
+    width: 100%;
+  }
+}
